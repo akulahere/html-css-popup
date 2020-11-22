@@ -83,10 +83,11 @@ ul {
     padding: 5px;
     border: 2px solid transparent;
 }
-.pop-up-item:hover {
+
+.pop-up-item:hover, .hidden-item:hover {
     opacity: 70%;
 }
-.pop-up-item:focus {
+.pop-up-item:focus, .hidden-item:focus {
     border-color: darkturquoise;
 }
 
