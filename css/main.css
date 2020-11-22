@@ -1,24 +1,28 @@
 body {
     font-family: "Times New Roman";
+    margin: 0px;
 }
 
 .navbar {
     display: -webkit-flex;
     display: flex;
-    background: #FFD7A7;
-    padding-left: 0;
+
     justify-content: flex-end;
     align-items: center;
+
     height: 50px;
+    min-height: 50px;
+
+    margin: 0px;
+
+    background: #FFD7A7;
 }
 
 .nav-elem {
-    display: -webkit-flex;
-    /*display: flex;*/
-    /*background: #FFD7A7;*/
-    margin-left: 10px;
-    padding: 10px;
+    padding-left: 30px;
+    height: 100%;
     border: 2px solid transparent;
+    list-style-type: none;
 
 }
 
@@ -26,3 +30,42 @@ body {
     cursor: pointer;
     border-color: darkturquoise;
 }
+.pop-up {
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    width: 20%;
+    z-index: 1;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    display: none;
+    background: gainsboro;
+}
+
+
+
+li:hover .pop-up {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*padding: 10px 10px 0 10px;*/
+}
+
+.pop-up-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    font-size: 14px;
+    text-align: center;
+    color: #4671C6;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+
