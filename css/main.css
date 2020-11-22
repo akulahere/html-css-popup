@@ -3,6 +3,16 @@ body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    color:black;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
@@ -29,37 +39,33 @@ ul {
     padding: 0 30px 0 30px;
     height: 100%;
     border: 2px solid transparent;
-}
-.nav-elem a {
-    /*align-self: center;*/
+    color: black;
 }
 
 .nav-elem:hover {
     cursor: pointer;
+    opacity: 70%;
+}
+.nav-elem:focus {
     border-color: darkturquoise;
 }
 .pop-up {
     position: absolute;
     top: 50px;
     left: -100%;
-    width: 250px;
-    max-height: 300px;
-
+    width: 280px;
+    max-height: 420px;
+    overflow: auto;
     z-index: 1;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     display: none;
-    background: gainsboro;
+    background-color: lightblue;
 }
 
-.hidden-elements {
-
-}
-
-
-li:hover .pop-up {
+.nav-elem:hover .pop-up {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -74,27 +80,55 @@ li:hover .pop-up {
     min-width: 60px;
     font-size: 14px;
     text-align: center;
-    color: #4671C6;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
+    padding: 5px;
+    border: 2px solid transparent;
+}
+.pop-up-item:hover {
+    opacity: 70%;
+}
+.pop-up-item:focus {
+    border-color: darkturquoise;
 }
 
 .hidden-elements {
     display: none;
 }
 
-#show-more {
-    display: none;
+.show-more-cb {
+    position: absolute;
+    left: -9999px;
+    appearance: none;
 }
 
-#show-more:checked ~ .hidden-elements {
+.show-more-cb:checked ~ .hidden-elements {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#show-more:checked ~ .show-more-label {
+.app-menu-more {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.show-more-label {
+    width: 100%;
+    background-color: cadetblue;
+    padding: 10px 0px 10px 0px;
+    border: 2px solid transparent;
+}
+
+.show-more-label:hover {
+    cursor: pointer;
+}
+
+.show-more-cb:focus ~ .show-more-label {
+    border-color: darkturquoise;
+}
+
+.show-more-cb:checked ~ .show-more-label {
     display: none;
 }
 
