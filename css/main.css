@@ -1,0 +1,28 @@
+body {
+    font-family: "Times New Roman";
+}
+
+.navbar {
+    display: -webkit-flex;
+    display: flex;
+    background: #FFD7A7;
+    padding-left: 0;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-elem {
+    display: -webkit-flex;
+    /*display: flex;*/
+    /*background: #FFD7A7;*/
+    margin-left: 10px;
+    padding: 10px;
+    border: 2px solid transparent;
+
+}
+
+.nav-elem:hover {
+    cursor: pointer;
+    border-color: darkturquoise;
+}
